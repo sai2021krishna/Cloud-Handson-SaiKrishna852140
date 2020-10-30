@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+        .bg-orange{
+              background-color:orangered;
+          }
+        #blue{
+               color:darkblue;
+         }
+         .food-search{
+                       background-image: url("https://images.unsplash.com/photo-1566707675793-3ec9e5590bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+                       padding: 50px;
+         }
+         .form-group #search-label{
+          color: white;
+         }
+         .footer{
+      background-color:orangered;
+         }
+        #copyright-info{
+              color: white;
+               padding:20px;
+           }          
+       </style>
+      <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="tru.css" type="text/css">
+    <title>TruYum</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+        <a href="menu-item-list-customer.html" class="navbar-brand">
+            <span class="material-icons">restaurant_menu</span> TruYum</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#hai">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="hai">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link">Cart</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="food-search">
+            <form action="#">
+                <div class="form-group">
+                    <label id="search-label" for="search"><h3>Find Food</h3></label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><span class="material-icons align-middle">free_breakfast</span></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search food">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80" alt="Sandwich" height="200px" class="cart-img-top">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 text-secondary text-bold"><h4>Sandwich</h4></div>
+                            <div class="col-4 text-danger"><p class="float-right">₹99</p></div>
+                        </div>
+                        <div class="row"> 
+                            <div class="col-6"><p>Main Course</p></div>
+                            <div class="col-6"> <p class="float-right"><span class="material-icons align-middle" id="blue">local_shipping</span> <span class="badge badge-info">Free</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-8">
+                               <a href="menu-item-list-customer-add-to-cart.html"><button type="button" class="btn btn-danger btn-sm float-right"> <span class="material-icons align-middle">add_shopping_cart</span> Add to Cart</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6  col-12 mt-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1512152272829-e3139592d56f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Burger" height="200px" class="cart-img-top">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 text-secondary text-bold"><h4>Burger</h4></div>
+                            <div class="col-4 text-danger"><p class="float-right">₹129</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><p>Main Course</p></div>
+                            <div class="col-6"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-8">
+                                <a href="menu-item-list-customer-add-to-cart.html"><button type="button" class="btn btn-danger btn-sm float-right"> <span class="material-icons align-middle">add_shopping_cart</span> Add to Cart</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Pizza" height="200px" class="cart-img-top">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 text-secondary text-bold"><h4>Pizza</h4></div>
+                            <div class="col-4 text-danger"><p class="float-right">₹149</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><p>Main Course</p></div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-8">
+                                <a href="menu-item-list-customer-add-to-cart.html"><button type="button" class="btn btn-danger btn-sm float-right"> <span class="material-icons align-middle">add_shopping_cart</span> Add to Cart</button></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1484009902830-a314db11070c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60" alt="French Fries" height="200px" class="cart-img-top">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 text-secondary text-bold"><h4>French Fries</h4></div>
+                            <div class="col-4 text-danger"><p class="float-right">₹57</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><p>Starter</p></div>
+                            <div class="col-6"><p class="float-right"><span class="material-icons align-middle" id="blue">local_shipping</span> <span class="badge badge-info">Free</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-8">
+                                <a href="menu-item-list-customer-add-to-cart.html"><button type="button" class="btn btn-danger btn-sm float-right"> <span class="material-icons align-middle">add_shopping_cart</span> Add to Cart</button></a>                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1585531742758-f868abccd68b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="Chocolate Browmine" height="200px" class="cart-img-top">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 text-secondary text-bold"><h4>Chocolate Browmine</h4></div>
+                            <div class="col-4 text-danger float-right"><p class="float-right">₹32</p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><p>Dessert</p></div>
+                            <div class="col-6"><p class="float-right"><span class="material-icons align-middle" id="blue">local_shipping</span> <span class="badge badge-info">Free</span></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-8">
+                                <a href="menu-item-list-customer-add-to-cart.html"><button type="button" class="btn btn-danger btn-sm float-right"> <span class="material-icons align-middle">add_shopping_cart</span> Add to Cart</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container foot-content">
+            <p id="copyright-info">Copyright 2019</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

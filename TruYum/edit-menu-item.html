@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TruYum</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="tru.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+        <a href="menu-item-list-customer.html" class="navbar-brand"><span class="material-icons">restaurant_menu</span> TruYum</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#hai">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="hai">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="menu-item-list-admin.html" class="nav-link">Menu Items</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link">Cart</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <div class="container">
+        <div><h4>Edit Menu Item</h4></div>
+        <form action="edit-menu-item-success.html" method="POST" class="needs-validation" novalidate>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="item-name">Item Name</label>
+                        <input type="text" id="item-name" name="itemname" class="form-control" maxlength="200" required>
+                        <div class="invalid-feedback">Item name required</div> 
+                        <div class="invalid-feedback">Item name can't exceed 200 character.</div>     
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="text" id="price" name="price" class="form-control" pattern="[0-9]{}" required>
+                        <div class="invalid-feedback">Price is required.</div> 
+                        <div class="invalid-feedback">Price can only numbers.</div>   
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="launch">Date of Launch</label>
+                        <input type="date" id="launch" name="launch" class="form-control">
+                        <div class="invalid-feedback">Incorrect date format.</div> 
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category" name="category" class="form-control" required>
+                            <option></option>
+                            <option value="Main Course">Main Course</option>
+                            <option value="Starter">Starter</option>
+                            <option value="Snack">Snack</option>
+                        </select>
+                        <div class="invalid-feedback">Select at least one category.</div> 
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="active">Active</label><br>
+                        <input type="radio" id="active" name="active" >Yes
+                        <input type="radio" id="active" name="active"  class="ml-5">No
+                        <div class="invalid-feedback">Select in stock status.</div> 
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="free-delivery">Free Delivery</label>
+                        <input type="checkbox" class="checkbox" name="free-delivery" id="free-delivery">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <a href="edit-menu-item-success.html"><input type="submit" name="submit" class="btn btn-info" value="Save"></a>
+                     </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="container foot-content">
+            <p id="copyright-info">Copyright 2019</p>
+        </div>
+    </div>
+    <script>
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            var forms = document.getElementsByClassName('needs-validation');
+
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

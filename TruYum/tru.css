@@ -1,0 +1,32 @@
+.bg-orange{
+    background-color:rgb(255, 102, 0);
+}
+.navbar{
+    background-color:rgb(255, 102, 0);
+}
+.nav-link:hover,.navbar-brand:hover{
+    color: #eee3e9;
+}
+.nav-link,.navbar-brand{
+    color:white;
+}
+#blue{
+     color:rgb(32, 53, 122);
+}
+.food-search{
+background-image: url("https://images.unsplash.com/photo-1566707675793-3ec9e5590bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+padding: 50px;
+}
+.form-group #search-label{
+color:white;}
+.footer{
+background-color:orangered;
+}
+#copyright-info{
+color:white;
+padding:20px;
+}
+#red
+{
+    color:red;
+}
